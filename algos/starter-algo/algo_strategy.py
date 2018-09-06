@@ -124,7 +124,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         that are in the arena bounds.
         '''
         all_locations = []
-        for i in range(game_state.ARENA_SIZE):
+        for i in range(9):
             for j in range(math.floor(game_state.ARENA_SIZE / 2)):
                 if (game_state.game_map.in_arena_bounds([i, j])):
                     all_locations.append([i, j])
