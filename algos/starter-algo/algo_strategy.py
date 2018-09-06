@@ -84,19 +84,18 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         First, we build the letter C.
         '''
-        firewall_locations = [[8, 11], [9, 11], [7,10], [7, 9], [7, 8], [8, 7], [9, 7]]
+        firewall_locations = [[1,11],[2,11],[3,11],[4,11],[5,11],[6,11],[8,11],[8, 11], [9, 11], [10,11], [11, 11], [12 , 11], [13, 11], [14, 11], [15,11], [16, 11], [17,11] ,[18,11],[19,11]]
         game_state.attempt_spawn(FILTER, firewall_locations)
         
         '''
         Build the number 1.
         '''
-        firewall_locations = [[17, 11], [18, 11], [18, 10], [18, 9], [18, 8], [17, 7], [18, 7], [19,7]]
-        game_state.attempt_spawn(FILTER, firewall_locations)
+
 
         '''
         Build 3 dots with destructors so it looks neat.
         '''
-        firewall_locations = [[11, 7], [13, 9], [15, 11]]
+        firewall_locations = [[4, 10 ], [8, 10], [15, 10]]
         game_state.attempt_spawn(DESTRUCTOR, firewall_locations)
 
     def build_defences(self, game_state):
