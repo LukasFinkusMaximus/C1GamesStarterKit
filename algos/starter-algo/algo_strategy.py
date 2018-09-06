@@ -84,7 +84,7 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         First, we build the letter C.
         '''
-        firewall_locations = [[1,11],[2,11],[3,11],[4,11],[5,11],[6,11],[8,11],[8, 11], [9, 11], [10,11], [11, 11], [12 , 11], [13, 11], [14, 11], [15,11], [16, 11], [17,11] ,[18,11],[19,11]]
+        firewall_locations = [[1,11],[2,11],[3,11],[4,11],[5,11],[6,11],[8,11],[8, 11], [9, 11], [10,11], [11, 11], [14, 11]]
         game_state.attempt_spawn(FILTER, firewall_locations)
         
         '''
@@ -111,9 +111,10 @@ class AlgoStrategy(gamelib.AlgoCore):
         shields decay over time, so shields closer to the action 
         are more effective.
         '''
-        firewall_locations = [[3, 11], [4, 11], [5, 11]]
+        firewall_locations = [[3, 10], [5, 10], [12, 10], [14, 10]]
         game_state.attempt_spawn(ENCRYPTOR, firewall_locations)
-
+     firewall_locations = [[16,11],[17,11],[18,11],[19,11],[20,11],[21,11],[22,11],[23, 11]]
+        game_state.attempt_spawn(FILTER, firewall_locations)
         '''
         Lastly lets build encryptors in random locations. Normally building 
         randomly is a bad idea but we'll leave it to you to figure out better 
