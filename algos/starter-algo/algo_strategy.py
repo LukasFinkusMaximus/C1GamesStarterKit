@@ -84,7 +84,7 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         First, we build the letter C.
         '''
-        firewall_locations = [[1,11],[2,11],[3,11],[4,11],[5,11],[6,11],[8,11],[8, 11], [9, 11], [10,11], [11, 11], [14, 11]]
+        firewall_locations = [[4,11],[5,11],[6,11],[8,11],[8, 11], [9, 11], [10,11], [11, 11], [14, 11]]
         game_state.attempt_spawn(FILTER, firewall_locations)
         
         '''
